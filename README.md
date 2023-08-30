@@ -28,8 +28,14 @@
 - For manage state globally so that we can do task from central state
 
 # Inner working of redux.
-- Action 
-- Dispatch 
-- Payload
-- Reducer
-- Store
+- 5 core concepts of redux which is correlated with each other
+- `Action `
+  - Each `action `take by user. Each `action` has a corresponding `reducer function.`
+- `Dispatch `
+  - Sending the `action` to the store. `Dispatching` an action triggers the corresponding `reducer` update the state.
+- `Payload`
+  - optional data that's attached to an `action`. It carries any additional information that needs to be sent along with the `action` to update the `state.`
+- `Reducer`
+  - A `reducer is a pure function` that takes the current state and an action as inputs and returns a new state. It defines how the application's state changes in response to different actions.
+- `Store`
+  - The `store` holds the state of the application. The `store` is responsible for dispatching actions, maintaining the state, and notifying subscribers about the state changes.
