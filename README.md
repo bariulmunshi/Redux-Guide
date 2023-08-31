@@ -1,33 +1,46 @@
 # Table of Contents
+
 - [Introduction to the course](#introduction-to-the-course)
 - [Why do we need redux ?](#why-do-we-need-redux)
 - [Inner working of redux.](#inner-working-of-redux)
+- [slice](#slice)
 
+# Basic Question & Answer
 
+- Redux Toolkit simplifies the Redux setup process, while Redux Thunk provides a middleware for handling asynchronous actions.Combined, they offer a powerful solution for state management in your React applications, following the principles of the BLoC architecture.
 
 # Introduction to the course
+
+## what's need to learn this course
+
+### RTK means Redux Toolkit
+
+- Redux Toolkit is used for writing redux code but in a more concise way
+- Libraries of Redux: Redux Toolkit is updated version of React-Redux
+
+### RTK query
+
+- RTK Query is a powerful data fetching and caching tool. It is designed to simplify common cases for loading data in a web application
+- RTK query is part of Redux Toolkit
+
 ## What's Redux?
+
 - Redux is an open-source JavaScript library for managing and centralizing application state.
 - Predictable,Centralized, Debuggable, Flexible
 - Redux made by react engineer
 - There are many state management libraries like Redux
 
 ## Redux may use in different libraries including JavaScript
-- As it a JavaScript library that's why we can use it in different libraries(vue.js, angular.js, etc) 
+
+- As it a JavaScript library that's why we can use it in different libraries(vue.js, angular.js, etc)
 - Redux is an open-source JavaScript library for managing and centralizing application state.
 
-## RTK means Redux Toolkit 
-- Redux Toolkit is used for writing redux code but in a more concise way
-- Libraries of Redux: Redux Toolkit is updated version of React-Redux
-
-## RTK query    
-- RTK Query is a powerful data fetching and caching tool. It is designed to simplify common cases for loading data in a web application
-- RTK query is part of Redux Toolkit
-
 # Why do we need redux?
+
 - For manage state globally so that we can do task from central state
 
 # Inner working of redux.
+
 - 5 core concepts of redux which is correlated with each other
 - `Action `
   - Each `action `take by user. Each `action` has a corresponding `reducer function.`
@@ -39,3 +52,17 @@
   - A `reducer is a pure function` that takes the current state and an action as inputs and returns a new state. It defines how the application's state changes in response to different actions.
 - `Store`
   - The `store` holds the state of the application. The `store` is responsible for dispatching actions, maintaining the state, and notifying subscribers about the state changes.
+
+
+## slice
+- A slice is the portion of Redux code that relates to a specific set of data and actions within the store's state.
+Three part for create a slice
+(name: 'counter', `kon slice er jonno kaj ta hocce seita porichoy korai dewa`
+  initialState,
+  reducers:)
+- create slice & here counter folder is a individual slice
+```sh
+step 1: create features folder within redux & create counter folder within features folder
+step 2: create counterSlice.js file within counter folder 
+step 3: Now import the slice into counterSlice.js file
+```
